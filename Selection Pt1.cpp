@@ -1,11 +1,13 @@
+// Insert library 
 #include <iostream>
 using namespace std; 
 
+// Create main function 
 int main() {
 	int numberOne, numberTwo; 
 	char op; 
 
-
+// Get input from user for first number, second number and the operator 
 	cout << "Enter first number: "; 
 	cin >> numberOne;
 
@@ -14,7 +16,7 @@ int main() {
 
 	cout << "Enter the operator: ";
 	cin >> op; 
-
+	// Create a loop using switch statement to cycle through operators to ensure proper calculations 
 	switch (op) {
 	    case '+':
 			cout << numberOne << " + " << numberTwo << " = " << numberOne + numberTwo << endl; 
@@ -33,6 +35,7 @@ int main() {
 				cout << "Division by zero is not allowed. " << endl; 
 			}
 			break; 
+		// Create default to inform user of error 
 		default: 
 			cout << "Invalid operator. " << endl; 
 			break; 
